@@ -45,7 +45,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Animate all cards and sections
-document.querySelectorAll('.feature-card, .category, .step').forEach(element => {
+document.querySelectorAll('.feature-card, .category, .step, .feature-category, .stats-banner, .category-title').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -274,4 +274,47 @@ async function initDownloadButtons() {
 document.addEventListener('DOMContentLoaded', () => {
     initDownloadButtons();
     // ... existing initialization code ...
-}); 
+});
+
+// Animated counter for stats banner
+function animateCounter(element, target, suffix = '') {
+    let current = 0;
+    const increment = target / 50;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            element.textContent = target + suffix;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current) + suffix;
+        }
+    }, 30);
+}
+
+// Initialize counters when stats banner comes into view
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                if (text.includes('+')) {
+                    const num = parseInt(text);
+                    animateCounter(stat, num, '+');
+                } else if (text.includes('%')) {
+                    const num = parseInt(text);
+                    animateCounter(stat, num, '%');
+                } else {
+                    const num = parseInt(text);
+                    animateCounter(stat, num);
+                }
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const statsBanner = document.querySelector('.stats-banner');
+if (statsBanner) {
+    statsObserver.observe(statsBanner);
+} 

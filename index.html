@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOSU - Music Player</title>
+    <title>SOSU - Music Player | 50+ Features for osu! Songs</title>
+    <meta name="description" content="A modern, feature-rich desktop music player with 50+ features designed specifically for osu! beatmap songs. Includes Discord integration, EQ, widgets, and more.">
+    <meta name="keywords" content="osu, music player, beatmap, discord, spotify, playlist, equalizer">
     <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -14,7 +16,6 @@
         <div class="logo">SOSU</div>
         <div class="nav-links">
             <a href="#features">Features</a>
-            <a href="#components">Components</a>
             <a href="#installation">Installation</a>
             <a href="#community">Community</a>
         </div>
@@ -49,54 +50,253 @@
     </header>
 
     <section id="features" class="features">
-        <h2>Key Features</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <i class="fas fa-music"></i>
-                <h3>Music Player</h3>
-                <p>Play songs from your osu! Songs folder</p>
+        <h2>50+ Powerful Features</h2>
+        <p class="features-subtitle">Everything you need for the ultimate osu! music experience</p>
+        
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-music"></i> Core Features</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-compact-disc"></i>
+                    <h4>Music Player</h4>
+                    <p>Play songs from your osu! Songs folder with seamless playback</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h4>Spotify-inspired UI</h4>
+                    <p>Modern, beautiful interface designed for comfort</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-list-ul"></i>
+                    <h4>Playlist Support</h4>
+                    <p>Create, manage, and organize custom playlists</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h4>Multiple Views</h4>
+                    <p>Library, Favorites, Recently Played, Most Played</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-save"></i>
+                    <h4>Auto-save</h4>
+                    <p>Automatic saving of settings and playback state</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-palette"></i>
-                <h3>Modern UI</h3>
-                <p>Beautiful, dark-themed interface inspired by Spotify</p>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-search"></i> Search & Filter</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-search-plus"></i>
+                    <h4>Real-time Search</h4>
+                    <p>Instant search with smart suggestions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Duration Filter</h4>
+                    <p>Hide songs shorter than specified length</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-slash"></i>
+                    <h4>Artist Hide List</h4>
+                    <p>Filter out songs from specific artists</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-text-width"></i>
+                    <h4>Advanced Title Filters</h4>
+                    <p>Contains, starts with, ends with filters</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-copy"></i>
+                    <h4>Remove Duplicates</h4>
+                    <p>Automatically filter duplicate song titles</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h4>Filter Statistics</h4>
+                    <p>View detailed filter results and stats</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-list"></i>
-                <h3>Playlist Support</h3>
-                <p>Create and manage custom playlists</p>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-play-circle"></i> Playback & Audio</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-play"></i>
+                    <h4>Full Playback Control</h4>
+                    <p>Play, pause, next, previous, seek, volume</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-random"></i>
+                    <h4>Shuffle Mode</h4>
+                    <p>Randomize your playlist playback</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-redo"></i>
+                    <h4>Repeat Modes</h4>
+                    <p>Repeat all, repeat one, or no repeat</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-forward"></i>
+                    <h4>Autoplay</h4>
+                    <p>Automatically play next song</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h4>Playback Speed</h4>
+                    <p>Adjust speed from 0.5x to 2.0x</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sliders-h"></i>
+                    <h4>10-band Equalizer</h4>
+                    <p>Professional audio tuning</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wave-square"></i>
+                    <h4>VU Visualizer</h4>
+                    <p>Real-time audio visualization</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <i class="fas fa-search"></i>
-                <h3>Search & Filter</h3>
-                <p>Quickly find songs by title, artist, or folder name</p>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-database"></i> Library Management</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-heart"></i>
+                    <h4>Favorites</h4>
+                    <p>Mark and organize your favorite songs</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Play Count Tracking</h4>
+                    <p>See how many times you've played each song</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-history"></i>
+                    <h4>Recently Played</h4>
+                    <p>Quick access to your recent listening history</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-fire"></i>
+                    <h4>Most Played</h4>
+                    <p>Discover your most-played tracks</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Song Details</h4>
+                    <p>View comprehensive metadata and info</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-plug"></i> Integrations</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fab fa-discord"></i>
+                    <h4>Discord Rich Presence</h4>
+                    <p>Show what you're listening to on Discord</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h4>OBS Widget Server</h4>
+                    <p>Display now-playing on your stream</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-plug"></i>
+                    <h4>WebSocket API</h4>
+                    <p>Control SOSU from external apps</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-link"></i>
+                    <h4>Beatmap Links</h4>
+                    <p>Quick links to osu.ppy.sh</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-broadcast-tower"></i>
+                    <h4>Now-Playing API</h4>
+                    <p>Public API for current song info</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-paint-brush"></i> Customization</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-image"></i>
+                    <h4>Blurred Album Art</h4>
+                    <p>Dynamic background from album covers</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-palette"></i>
+                    <h4>Custom Accent Colors</h4>
+                    <p>Personalize your interface colors</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-moon"></i>
+                    <h4>Dark Theme</h4>
+                    <p>Eye-friendly dark mode by default</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-desktop"></i>
+                    <h4>Widget Themes</h4>
+                    <p>Customize OBS widgets with themes</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-github"></i>
+                    <h4>Theme Download</h4>
+                    <p>Get themes directly from GitHub</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-category">
+            <h3 class="category-title"><i class="fas fa-cog"></i> Data Management</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-file-export"></i>
+                    <h4>Export Settings</h4>
+                    <p>Backup your configuration to JSON</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-import"></i>
+                    <h4>Import Settings</h4>
+                    <p>Restore settings from backup</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-sync"></i>
+                    <h4>Rescan Library</h4>
+                    <p>Refresh your music library</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-redo-alt"></i>
+                    <h4>Full Reset</h4>
+                    <p>Reset everything to defaults</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-banner">
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Features</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">13</span>
+                <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Free & Open Source</span>
             </div>
         </div>
     </section>
 
-    <section id="components" class="components">
-        <h2>Key Components</h2>
-        <div class="component-categories">
-            <div class="category">
-                <h3><i class="fas fa-music"></i> Music Control</h3>
-                <ul>
-                    <li><i class="fas fa-play"></i> Play & Pause Controls</li>
-                    <li><i class="fas fa-volume-up"></i> Volume Control</li>
-                    <li><i class="fas fa-forward"></i> Skip & Seek Controls</li>
-                    <li><i class="fas fa-sync"></i> Shuffle & Repeat</li>
-                </ul>
-            </div>
-            <div class="category">
-                <h3><i class="fas fa-star"></i> Special Features</h3>
-                <ul>
-                    <li><i class="fab fa-discord"></i> Discord Rich Presence</li>
-                    <li><i class="fas fa-link"></i> Beatmap Links</li>
-                    <li><i class="fas fa-list"></i> Custom Playlists</li>
-                    <li><i class="fas fa-search"></i> Search & Filter</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
 
     <section id="installation" class="installation">
         <h2>Installation</h2>
